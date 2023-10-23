@@ -17,7 +17,7 @@
                 <?php
                 foreach ($estudiantes as $persona => $nota) {
                 ?>
-                    <li> La nota media de <?= $persona ?> es <?= $nota ?></li>
+                    <li> La nota media de <?= $persona ?> es <?= $nota   ?></li>
 
                 <?php
                 }
