@@ -10,4 +10,3 @@ function concat($a, $b = "me llamo alberto")
     return $cadenasUnidas;
 };
 require "ejercicio11.view.php";
-echo ("<p>las dos cadenas unidas son: $respuesta </p>");

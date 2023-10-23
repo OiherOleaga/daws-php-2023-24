@@ -14,6 +14,9 @@
             aplicación
 
         </p>
+
+        <p>las dos cadenas unidas son: <?= $respuesta ?> </p>
+
     </body>
 
 </html>
