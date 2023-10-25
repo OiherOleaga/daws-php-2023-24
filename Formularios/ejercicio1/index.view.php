@@ -3,10 +3,13 @@
 
 <head>
     <title>PHP prueba</title>
+    <title>PHP prueba</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <head>
 
     <body>
+
         <p>
             Crea un convertidor de grados Celsius a Farenheit (y viceversa). La aplicación
             pedirá una cantidad al usuario y la unidad mediante un formulario. Una vez enviado,
@@ -28,7 +31,8 @@
             </p>
             <p><input type="submit" name="enviar"></p>
         </form>
-        <p>el numero resultado es <?= $temperatura ?></p>
+        <p class="resultado">El número resultado es <?= $temperatura ?></p>
+
 
 
     </body>
