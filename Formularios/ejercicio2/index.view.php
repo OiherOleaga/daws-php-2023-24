@@ -43,7 +43,7 @@
             </p>
             <p><input type="submit" name="enviar"></p>
         </form>
-        <p class="resultado">El número resultado es <?= $resultado ?></p>
+        <p class="resultado">El número resultado es <?php isset($resultado) ? print $resultado : "" ?></p>
 
 
 
