@@ -1,0 +1,68 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e0a7;
+    /* Fondo amarillo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #d25500;
+    /* Texto anaranjado */
+    padding: 20px 0;
+}
+
+/* Estilos para la tabla de productos */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    /* Fondo blanco */
+}
+
+table th,
+table td {
+    border: 1px solid #e2b163;
+    /* Borde amarillo claro */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #d25500;
+    /* Botón naranja */
+    color: #fff;
+    /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces (puede ser personalizado) */
+a {
+    color: #d25500;
+    /* Enlaces naranjas */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
