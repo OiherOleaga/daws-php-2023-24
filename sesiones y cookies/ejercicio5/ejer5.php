@@ -1,37 +1,22 @@
 <?php
 session_start();
 
-// Datos de acceso de los usuarios:
 $usuarios = array(
-    "user1" => array(
-        "nombre" => 'oiher',
-        "apellidos" => 'López',
-        "password" => '12345'
-    ),
-    "user2" => array(
-        "nombre" => 'Amaia',
-        "apellidos" => 'Otsoa',
-        "password" => '456Xyz'
-    )
+    'oiher' => '12345',
+    'usuario2' => 'contrasena2',
 );
 
-function comprobarInicioSesion($usuarios)
-{
-    $usuario = $_GET["user"];
-    $contrasena = $_GET["password"];
+if (isset($_POST['login'])) {
+    $usuario = $_POST['usuario'];
+    $contrasena = $_POST['contrasena'];
 
-    if (array_key_exists($usuario, $usuarios) && $usuarios[$usuario]["password"] === $contrasena) {
-        return true;
+    if (isset($usuarios[$usuario]) && $usuarios[$usuario] === $contrasena) {
+        $_SESSION['usuario'] = $usuario;
+        header('Location: login.php');
+        exit();
     } else {
-        return false;
+        $mensajeError = "Usuario o contraseña incorrectos.";
     }
 }
 
-if (isset($_GET["user"]) && isset($_GET["password"])) {
-    $sesionValida = comprobarInicioSesion($usuarios);
-} else {
-    $sesionValida = false;
-}
-
-
-require "index.view.php";
+include('index.view.php');
