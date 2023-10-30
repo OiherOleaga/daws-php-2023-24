@@ -1,0 +1,83 @@
+/* Estilos generales */
+html {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    /* Usar un contenedor flexible */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    flex-direction: column;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para la lista de asistentes */
+ul {
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Estilos para el formulario */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #217dbb;
+}
+
+/* Estilos para el botón de borrar lista */
+input[name="borrar"] {
+    background-color: #e74c3c;
+}
+
+input[name="borrar"]:hover {
+    background-color: #c0392b;
+}
