@@ -9,7 +9,7 @@
 
 <body>
     <h1>Catálogo de Productos</h1>
-    <form action="ejer5.php" method="post">
+    <form action="ejer7.php" method="post">
         <table>
             <tr>
                 <th>Producto</th>
@@ -110,6 +110,9 @@
         </table>
         <input type="submit" value="Enviar">
     </form>
+
+    <?php mostrarCesta($compras, $productos); ?>
+
 
     <h1><?= $precio ?></h1>
 </body>
